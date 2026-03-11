@@ -5,5 +5,8 @@
 }
 
 //Programme Principal
-(int H, int M) = ConvertMinToHM(130);
-Console.WriteLine($"{H}:{M}");
+
+Console.WriteLine("Saisir un nombre de minutes");
+(int H, int M) = ConvertMinToHM(Convert.ToInt32(Console.ReadLine()));
+Console.WriteLine($"{H}:{M:D2}");
+//D
